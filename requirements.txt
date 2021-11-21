@@ -1,0 +1,15 @@
+# API and web.
+fastapi
+uvicorn
+jinja2
+aiofiles
+websockets
+requests
+python-dateutil
+# Camera
+picamera
+# RPi.
+RPi.GPIO
+# VS Code.
+pylint
+black

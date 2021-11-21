@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CloudedBats - Camera</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <!-- Bulma -->
+    <link rel="stylesheet" href="{{ url_for('static', path='css/bulma-0.9.3-min.css') }}">
+    <!-- CloudedBats Camera -->
+    <link href="{{ url_for('static', path='css/rpicam_styles.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='css/rpicam_slider.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', path='js/rpicam_globals.js/?v=15') }}"></script>
+    <script src="{{ url_for('static', path='js/rpicam_ui.js/?v=15') }}"></script>
+    <script src="{{ url_for('static', path='js/rpicam_client.js/?v=15') }}"></script>
+    <script src="{{ url_for('static', path='js/rpicam_onload.js/?v=15') }}"></script>
+</head>
+
+<body>
+    <nav class="navbar is-white has-shadow">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img src="assets/logo.png" style="max-height: 70px" class="py-2 px-2">
+          </a>
+          <a class="navbar-burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      
+        <div class="navbar-menu" id="nav-links">
+          <div class="navbar-end">
+            <a class="navbar-item">Live view</a>
+            <a class="navbar-item">Settings</a>
+            <a class="navbar-item">About</a>
+          </div>
+        </div>
+      </nav>
+    
+    
+    <section class="section">
+        <div class="container">
+          <div class="columns is-centered is-multiline">
+            <div class="column is-6-tablet is-6-desktop">
+              <h1 class="is-size-1-mobile is-size-1-desktop title">CloudedBats - Camera</h1>
+              <h2 class="is-size-2-mobile is-size-2-desktop subtitle">Live view</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+ <!--            <div class="column is-6-tablet is-5-desktop has-text-centered">
+              <img src="assets/product.png" alt="docker coffee image" class="px-6">
+            </div>
+ -->
+          <div class="columns is-centered is-multiline">
+            <div class="column is-6-tablet is-6-desktop">
+              <div class="is-size-2-mobile is-size-2-desktop subtitle">Settings</div>
+              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <form>
+                <div class="control mb-6">
+                  <div class="select is-dark">
+                    <select>
+                      <option>Half size</option>
+                      <option>Full size</option>
+                    </select>
+                  </div>
+                </div>
+                <button class="button is-primary">Start</button>
+                <button class="button is-primary">Stop</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
