@@ -23,13 +23,17 @@ class PicamManager(object):
 
     async def startup(self):
         """ """
+        print("DEBUG: startup")
 
     async def shutdown(self):
         """ """
+        print("DEBUG: shutdown")
 
     async def start_live_view(self):
         """ """
+        print("DEBUG: start_live_view")
 
     async def stop_live_view(self):
         """ """
+        print("DEBUG: stop_live_view")
 

@@ -1,6 +1,7 @@
 venv
 *.pyc
 **/*.h264
+**/*.h265
 **/*.mjpeg
 **/*.wav
-**/*_test*.py
+

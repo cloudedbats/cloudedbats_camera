@@ -41,39 +41,63 @@
         </div>
       </nav>
     
-    
-    <section class="section">
+      <section class="section has-background-grey-dark is-fluid">
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical">
+                <div class="tile">
+                    <div class="tile is-parent is-vertical">
+
+    <section class="section box has-background-grey-lighter">
         <div class="container">
           <div class="columns is-centered is-multiline">
             <div class="column is-6-tablet is-6-desktop">
-              <h1 class="is-size-1-mobile is-size-1-desktop title">CloudedBats - Camera</h1>
-              <h2 class="is-size-2-mobile is-size-2-desktop subtitle">Live view</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <h1 class="is-size-4-mobile is-size-4-desktop title">CloudedBats - Camera</h1>
+              <h2 class="is-size-6-mobile is-size-6-desktop subtitle">Under development...</h2>
+              <h2 class="is-size-5-mobile is-size-5-desktop subtitle">Live view</h2>
+              <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> -->
+
+              <!-- <img src="http://pathfinder.local:8099/stream.mjpg" width="640" height="480"> -->
+              <!-- <img href="http://pathfinder.local:8099/stream.mjpg" width="640" height="480"> -->
+              <script language="JavaScript">
+                document.write('<img src="' + window.location.protocol + '//' + window.location.hostname + ':8099/stream.mjpg" width="640" height="480">');
+              </script>
+
+              <div class="mt-2">
+              <button class="button is-small is-info is-rounded onclick="picamCommand('start-live-view')"">Start live view</button>
+              <button class="button is-small is-info is-rounded onclick="picamCommand('stop-live-view')"">Stop live view</button>
             </div>
-          </div>
+                        </div>
+      </div>
  <!--            <div class="column is-6-tablet is-5-desktop has-text-centered">
               <img src="assets/product.png" alt="docker coffee image" class="px-6">
             </div>
  -->
           <div class="columns is-centered is-multiline">
             <div class="column is-6-tablet is-6-desktop">
-              <div class="is-size-2-mobile is-size-2-desktop subtitle">Settings</div>
+              <div class="is-size-5-mobile is-size-5-desktop subtitle">Settings</div>
               <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <form>
                 <div class="control mb-6">
-                  <div class="select is-dark">
+                  <div class="select">
                     <select>
                       <option>Half size</option>
                       <option>Full size</option>
                     </select>
                   </div>
                 </div>
-                <button class="button is-primary">Start</button>
-                <button class="button is-primary">Stop</button>
+                <!-- <button class="button is-info is-rounded onclick="picamCommand('start-live-view')"">Start live view</button> -->
+                <!-- <button class="button is-info is-rounded onclick="picamCommand('stop-live-view')"">Stop live view</button> -->
               </form>
             </div>
           </div>
         </div>
       </section>
+
+    </div>
+  </div>
+</div>
+</div>
+</section>
+      
 </body>
 </html>
